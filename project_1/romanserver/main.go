@@ -2,9 +2,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/rezwanul-haque/golang_projects/project_1/romanNumerals"
+	"golang_projects/project_1/romanNumerals" // our data service
 	"html"
-	"net/http"
+	"net/http" // core package for handling HTTP request
 	"strconv"
 	"strings"
 	"time"
@@ -13,7 +13,7 @@ import (
 func main() {
 	// http package has methods for dealing with requests
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		urlPathElements := strings.Split(r.URL.Path, "/")
+		urlPathElements := strings.Split(r.URL.Path, "/") // r.URL.Path is the URL path of the HTTP request ## /roman_number/5
 		// If request is GET with correct syntax
 		if urlPathElements[1] == "roman_number" {
 			number, _ := strconv.Atoi(strings.TrimSpace(urlPathElements[2]))
@@ -33,9 +33,9 @@ func main() {
 
 	// Create a server and run it on 8000 port
 	s := &http.Server{
-		Addr: ":8000"
-		ReadTimeout: 10 * time.Second,
-		WriteTimeout: 10 * time.Second, 
+		Addr:           ":8000",
+		ReadTimeout:    10 * time.Second,
+		WriteTimeout:   10 * time.Second,
 		MaxHeaderBytes: 1 << 20,
 	}
 	s.ListenAndServe()
