@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bd3c0e5-d1d0-4e06-8495-8bd53650c5a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/bookstore_users_api/domain/users/user_dao.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bookstore_users_api/domain/users/user_dto.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore_users_api/controllers/users/users_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_users_api/controllers/users/users_controller.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore_users_api/domain/users/user.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore_users_api/services/users_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_users_api/services/users_service.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bookstore_users_api/utils/errors/rest_error.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_users_api/utils/errors/rest_error.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore_users_api/domain/users/user_dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_users_api/domain/users/user_dao.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,22 +66,22 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2508" y="200" width="800" height="677" key="#Go_Modules_(vgo)/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1581909603532" />
-    <state width="1807" height="354" key="GridCell.Tab.0.bottom" timestamp="1582211359600">
+    <state width="1807" height="287" key="GridCell.Tab.0.bottom" timestamp="1582213518152">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1807" height="354" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582211359600" />
-    <state width="1807" height="354" key="GridCell.Tab.0.center" timestamp="1582211359599">
+    <state width="1807" height="287" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582213518152" />
+    <state width="1807" height="287" key="GridCell.Tab.0.center" timestamp="1582213518152">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1807" height="354" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582211359599" />
-    <state width="1807" height="354" key="GridCell.Tab.0.left" timestamp="1582211359599">
+    <state width="1807" height="287" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582213518152" />
+    <state width="1807" height="287" key="GridCell.Tab.0.left" timestamp="1582213518152">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1807" height="354" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582211359599" />
-    <state width="1807" height="354" key="GridCell.Tab.0.right" timestamp="1582211359599">
+    <state width="1807" height="287" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582213518152" />
+    <state width="1807" height="287" key="GridCell.Tab.0.right" timestamp="1582213518152">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1807" height="354" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582211359599" />
+    <state width="1807" height="287" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582213518152" />
     <state width="1807" height="354" key="GridCell.Tab.1.bottom" timestamp="1582211359600">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -117,18 +112,13 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/bookstore_users_api/controllers/users/users_controller.go</url>
-          <line>27</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/bookstore_users_api/services/users_service.go</url>
           <line>11</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/bookstore_users_api/domain/users/user_dao.go</url>
-          <line>12</line>
+          <line>13</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
