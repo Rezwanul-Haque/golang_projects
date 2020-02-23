@@ -2,8 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bd3c0e5-d1d0-4e06-8495-8bd53650c5a8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bookstore_users_api/datasources/mysql/users_db/users_db.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookstore_users_api/domain/users/user_marshaller.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookstore_users_api/logger/logger.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookstore_users_api/services/items_service.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookstore_users_api/utils/crypto_utils/crypto_utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookstore_users_api/utils/date/date.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bookstore_users_api/utils/db/mysql_utils/mysql_utils.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore_users_api/app/app.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_users_api/app/app.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore_users_api/app/urls.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_users_api/app/urls.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore_users_api/controllers/users/users_controller.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_users_api/controllers/users/users_controller.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bookstore_users_api/domain/users/user_dao.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_users_api/domain/users/user_dao.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore_users_api/domain/users/user_dto.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_users_api/domain/users/user_dto.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore_users_api/services/users_service.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_users_api/services/users_service.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bookstore_users_api/utils/errors/rest_error.go" beforeDir="false" afterPath="$PROJECT_DIR$/bookstore_users_api/utils/errors/rest_error.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +52,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/bookstore_users_api/utils/db/msql" />
       <recent name="$PROJECT_DIR$/bookstore_users_api/controllers/users" />
       <recent name="$PROJECT_DIR$/bookstore_users_api/controllers/ping_controller" />
     </key>
@@ -47,6 +61,12 @@
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="microservices_with_golang" />
       <working_directory value="$PROJECT_DIR$/" />
+      <envs>
+        <env name="mysql_users_username" value="root" />
+        <env name="mysql_users_password" value="123456" />
+        <env name="mysql_users_host" value="127.0.0.1:3306" />
+        <env name="mysql_users_schema" value="users_db" />
+      </envs>
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/bookstore_users_api/main.go" />
       <directory value="$PROJECT_DIR$/" />
@@ -66,42 +86,50 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2508" y="200" width="800" height="677" key="#Go_Modules_(vgo)/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1581909603532" />
-    <state width="1807" height="287" key="GridCell.Tab.0.bottom" timestamp="1582213518152">
+    <state x="2371" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582438687791">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1807" height="287" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582213518152" />
-    <state width="1807" height="287" key="GridCell.Tab.0.center" timestamp="1582213518152">
+    <state x="2371" y="197" key="#com.intellij.execution.impl.EditConfigurationsDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582438687791" />
+    <state x="2650" y="303" width="515" height="472" key="EnvironmentVariablesDialog" timestamp="1582438675690">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1807" height="287" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582213518152" />
-    <state width="1807" height="287" key="GridCell.Tab.0.left" timestamp="1582213518152">
+    <state x="2650" y="303" width="515" height="472" key="EnvironmentVariablesDialog/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582438675690" />
+    <state width="1807" height="287" key="GridCell.Tab.0.bottom" timestamp="1582472926389">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1807" height="287" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582213518152" />
-    <state width="1807" height="287" key="GridCell.Tab.0.right" timestamp="1582213518152">
+    <state width="1807" height="287" key="GridCell.Tab.0.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582472926389" />
+    <state width="1807" height="287" key="GridCell.Tab.0.center" timestamp="1582472926389">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1807" height="287" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582213518152" />
-    <state width="1807" height="354" key="GridCell.Tab.1.bottom" timestamp="1582211359600">
+    <state width="1807" height="287" key="GridCell.Tab.0.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582472926389" />
+    <state width="1807" height="287" key="GridCell.Tab.0.left" timestamp="1582472926389">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1807" height="354" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582211359600" />
-    <state width="1807" height="354" key="GridCell.Tab.1.center" timestamp="1582211359600">
+    <state width="1807" height="287" key="GridCell.Tab.0.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582472926389" />
+    <state width="1807" height="287" key="GridCell.Tab.0.right" timestamp="1582472926389">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1807" height="354" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582211359600" />
-    <state width="1807" height="354" key="GridCell.Tab.1.left" timestamp="1582211359600">
+    <state width="1807" height="287" key="GridCell.Tab.0.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582472926389" />
+    <state width="1807" height="354" key="GridCell.Tab.1.bottom" timestamp="1582465224927">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1807" height="354" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582211359600" />
-    <state width="1807" height="354" key="GridCell.Tab.1.right" timestamp="1582211359600">
+    <state width="1807" height="354" key="GridCell.Tab.1.bottom/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582465224927" />
+    <state width="1807" height="354" key="GridCell.Tab.1.center" timestamp="1582465224927">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state width="1807" height="354" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582211359600" />
-    <state x="2576" y="237" key="search.everywhere.popup" timestamp="1581915747231">
+    <state width="1807" height="354" key="GridCell.Tab.1.center/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582465224927" />
+    <state width="1807" height="354" key="GridCell.Tab.1.left" timestamp="1582465224927">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2576" y="237" key="search.everywhere.popup/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1581915747231" />
+    <state width="1807" height="354" key="GridCell.Tab.1.left/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582465224927" />
+    <state width="1807" height="354" key="GridCell.Tab.1.right" timestamp="1582465224927">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1807" height="354" key="GridCell.Tab.1.right/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582465224927" />
+    <state x="2576" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1582470564227">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2576" y="237" width="672" height="678" key="search.everywhere.popup/67.27.1853.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582470564227" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -110,16 +138,6 @@
           <url>file://$PROJECT_DIR$/bookstore_users_api/controllers/ping/ping_controller.go</url>
           <line>8</line>
           <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/bookstore_users_api/services/users_service.go</url>
-          <line>11</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/bookstore_users_api/domain/users/user_dao.go</url>
-          <line>13</line>
-          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
